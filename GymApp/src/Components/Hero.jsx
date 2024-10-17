@@ -1,4 +1,4 @@
-import React from 'react'
+import ButtonCom from "./ButtonCom"
 
 const Hero = () => {
   return (
@@ -13,9 +13,9 @@ const Hero = () => {
     </div>
 <p className='text-sm md:text-base font-light'>I hereby acknowledgement that I may become <span className='text-blue-400'>unbelievably swolenormous</span> and accept all risk of becoming the local <span className='text-blue-400'>mass montrosity</span>,affilicted with severe body dismorphia,unable to fit through doors</p>
 
-<button className='px-8 py-4 rounded-md border-[2px] bg-slate-950 border-blue-400 border-solid blueShadow duration-200'>
- <p>Accept & begin</p>
-</button>
+<ButtonCom func={() => {
+                window.location.hash = '#generate'
+            }} text={"Accept & Begin"}></ButtonCom>
 
     </div>
   )
